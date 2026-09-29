@@ -1,0 +1,8 @@
+Element      Purpose
+<header>     introductory content or navigation 
+<nav>        Navigation link
+<main>       Main content of the page
+<section>    Self-contained content
+<article>    Thematic grouping of content
+<aside>      Sidebar or related content
+<footer>     Footer content

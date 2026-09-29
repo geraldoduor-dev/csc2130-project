@@ -1,0 +1,51 @@
+Biashara OS
+Biashara OS is a small busines financial and  recorrds management platform.
+it helps to simplify record-keeping in small businesses and eliminates paper trails that cause confusion.
+
+TARGET USERS
+1.Kiosks
+2.Mama mbogas
+3.Small hotels
+4.Small amd medium shopes
+
+
+CORE FEATURES:
+1.Record sales(eventualy link to m-pesa )
+2.Record expenses and categorise them
+3.View current cash position
+4.Track customers and suppliers
+5.Record debts and credits
+6.Generate daily,weekly and monthly report
+7.Manage stock - record goods received,damaged, and supplier details
+
+WHY CHOOSE It
+I saw the local shopes in the univerity had now effective way of record keeping,they were either using books,exel spreadsheets or had no
+record keeping at all.
+This caused loses,time wastage and was nota  good business structure.
+The existing platforms are made for larger business and the small ones are left out.
+
+PROJECT STUCTURE:
+1.index.html
+  this is introductory file 
+  It introduces the project,its purposeand features in detail 
+
+3.dashboard.html
+  Here the business owner can see the current cash position,total sales and expenes for the day,
+  and can acces the sale and expenses buttons
+
+2.sale.html
+   Here the business owner can record sales and debts 
+
+3.expense.html
+   Here the business owner can record expenses and credits
+
+3.inventory.html
+   Here the business owner  record  stocks  recived ,quantity destroyed ,description of each and the name of the supplier.
+
+4.contact.html
+   Here the business owner can track every customer and supplier,track their debts and credits
+
+5.report.html
+  Here the business owner can generate daily,weekly amd monthly reports about the expeses and sales of the business
+  generate a report about the stock the business.
+
