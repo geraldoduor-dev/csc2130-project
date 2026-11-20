@@ -42,7 +42,7 @@ PROJECT STUCTURE:
 3.inventory.html
    Here the business owner  record  stocks  recived ,quantity destroyed ,description of each and the name of the supplier.
 
-4.contact.html
+4.Tracking.html
    Here the business owner can track every customer and supplier,track their debts and credits
 
 5.report.html

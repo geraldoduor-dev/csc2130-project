@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Products and stock/Biashara OS</title>
+</head>
+<body>
+    <body>
+  <!--main-->
+  <div class="app-layout">
+
+    <!--side bar-->
+    <aside class="sidebar">
+      <div cass="logo">
+        <h1>Biashara OS</h1>
+        <br>
+      </div>
+         <nav>
+            <a  href="sale.html">Sell</a>
+            <a  href="expenses.html">Expenses</a>
+            <a href="product.html" class="active">Products & Stock</a>
+            <a href="D&C.html">D and C
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+    
+    </aside>
+  
+     <!--Main content-->
+    <main class="main-content">
+
+    <header class="topbar">
+      <input type="search" id="productSearch" placeholder="Search products by name..." >
+      
+      <div class="user-profile">
+        john doe
+      </div>
+    </header>
+
+    <!--sales side-->
+    <div class="sale-workspace">
+
+      <!--products-->
+      <div class="product_selection">
+        <div class="section-heading">
+          <div>
+            <h2>Track Products and stock</h2>
+<br>
+          </div>
+        </div>
+        
+         <div class="categories">
+                    <button>All</button>
+                    <button>Drinks</button>
+                    <button>Food</button>
+                    <button>Household</button>
+                    <button>Other</button>
+                </div>
+                        <P id="saleValue"></p>
+
+                       <!--displaying the products in a grid-->
+
+               <div class="product-grid">
+
+                  <div class="product-card">
+                    <img src="image/milk.png" alt="Milk">
+                    <H4>Milk 500ml</H4>
+                    <p>Rem 20</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Soap">
+                    <H4>Soap</H4>
+                    <p>rem 30 Boxes</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Maize flour">
+                    <H4>Maize flour</H4>
+                    <p>rem 40</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="pens">
+                    <H4>Pens</H4>
+                    <p>rem 100</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Milk">
+                    <H4>Milk 500ml</H4>
+                    <p>KES 65</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Milk">
+                    <H4>Milk 500ml</H4>
+                    <p>KES 65</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Milk">
+                    <H4>Milk 500ml</H4>
+                    <p>KES 65</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Milk">
+                    <H4>Milk 500ml</H4>
+                    <p>KES 65</p>
+                    <button>+</button>
+                  </div>
+                </div>
+      </div>
+     
+
+              <!--e customers products here using javascript-->
+
+               <!--the customer cart-->
+
+               <aside class="cart-section">
+                     <h3>Adding a new product</h3>
+<form id="newProduct" >
+
+    <label for="purchaseDescription">Product</label>
+    <input type="text" placeholder=" Example:" id="purchaseDescription" 
+     name="purchaseDescription" class="inputstyle"></input>
+      <br><br>
+    <label for="quantityBought">Quantity</label>
+    <input type="number" placeholder=" 1/one" id="quantityBought" name="quantityBought" 
+     min="1" class="inputstyle">
+    <br><br>
+    <label for="buyPrice">Buying Price(KSH)</label>
+    <input type="number" placeholder=" 0" id="buyPrice" name="buyPrice"
+     min="1" step="0.01" class="inputstyle">
+     <br><br>
+     <label for="sellPrice">Selling price</label>
+     <input type="number" placeholder="0" id="sellPrice" name="sellPrice"
+     min="1" step="0.01" class="inputstyle">
+<br>
+<br>
+                     <div class="customer-select">
+                       <div class="cart-summary">
+                        <P id="saleValue"></p>
+                        <h2 id="profit"></h2>
+
+                        <button class="charge-btn" type="submit">
+                          You Paid KES 0
+                        </button>
+                       </div>
+                     </div>
+
+                     <!--the payment way i need this to be a pag that comes up whan you press
+                      the charge button but for noe this will do-->
+
+                      
+                       <div class="payment-methods">
+                    <button>M-Pesa</button>
+                    <button>Card</button>
+                    <button>Cash</button>
+                    <button>
+                      <a href="D&C.html">Dept</a>
+                    </button>
+                </div>
+                </form>
+               </aside>
+
+    </section>
+  </div>
+  </main>
+  <script src="js/main.js"></script>
+</body>
+</html>

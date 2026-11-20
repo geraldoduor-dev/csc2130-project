@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Record Sales</title>
+</head>
+
+<body>
+
+    <section class="app2">
+         <aside class="side">
+            <div class="sidetop">
+
+                  <header class="avgs">
+         <h1>Record Sales</h1>
+
+    </header>
+   
+                <h3>BIASHARA OS</h3>
+                <hr>
+<form id="sale_form" action="sale.php" method="post" name="sale_form">
+
+            <nav>
+             <button id="metric-card">
+            <a href="dashbord.html">Home</a></button>
+        <br>
+             <button id="metric-card">
+             <a href="inventory.html">Stock</a>
+            </button>
+            
+            <br>
+              <button id="metric-card">
+            <a href="tracking.html"> Contacts</a>
+              </button>
+            <br>
+            <button id="metric-card">
+            <a href="report.html">Reports</a>
+            </button>
+            
+            </nav>
+            </div>
+        </aside>
+   
+        
+  
+    <form id="sale_form" action="sale.php" method="post" name="sale_form">
+
+       <div class="right">
+    <main>
+  
+    <label for="product_name">Product/Service</label>
+    <input type="text" placeholder=" Mfano:sukari,unga" id="product_name" name="product_name" required>
+      <br>
+    <label for="quantity_sold">Quantity</label>
+    <input type="number" placeholder=" 1/one" id="quantity_sold" name="quantity_sold"  min="1" required>
+    <br>
+    <label for="sale_amount">Amount(KSH)</label>
+    <input type="number" placeholder=" 0" id="sale_amount" name="sale_amount" min="1" required>
+
+    <br>
+    <br>
+    <br>
+    <hr>
+    <div class="total_sold">
+      <p> Total  ------------------- <span  id="result"></span></p>
+    </div>
+
+    </div>
+
+
+
+    <div class="left">
+    <label for="sale_date">Date</label>
+    <input type="date" placeholder=" Today,9 Nov 2026" id="sale_date" name="sale_date" >
+    
+   <br>
+   <br>
+    
+    <!-- <label for="payment_method" style="text-align:left;">Payment Method</label>
+    <select id="payment_method" name="payment_method">
+      <option value="">select payment method</option>
+      <option value="cash">Cash</option>
+      <option value="bank">Bank</option>
+      <option value="other">Other</option> 
+    </select> -->
+
+     <section class="payment_method1">
+      <div class="sec1">
+    <input type="radio" id="M-Pesa" name="payment_method" value="M-Pesa">
+    <label for="M-Pesa">M-pesa</label>
+    <input type="radio" id="airtel" name="payment_method" value="airtel">
+    <label for="airtel">Airtel</label>
+    </div><br>
+    <div class="sec2"> 
+    <input type="radio" id="bank" name="payment_method" value="bank">
+    <label for="bank">Bank</label>
+    <input type="radio" id="cash" name="payment_method" value="cash">
+    <label for="cash">Cash</label>
+    </div>
+  </section>
+
+    
+       <br>
+       <br>
+       <label for="submit"></label>
+       <button type="submit" value="submit"  id="submit"> Save Transaction</button>
+
+      </main>
+  </form>
+
+    </div>
+  </section>
+<script src="main.js"></script>
+</body>
+</html>

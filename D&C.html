@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Deptors and Creditors/Biashara OS</title>
+</head>
+<body>
+    <body>
+  <!--main-->
+  <div class="app-layout">
+
+    <!--side bar-->
+    <aside class="sidebar">
+      <div cass="logo">
+        <h1>Biashara OS</h1>
+        <br>
+      </div>
+         <nav>
+            <a  href="sale.html">Sell</a>
+            <a  href="expenses.html">Expenses</a>
+            <a href="product.html">Products & Stock</a>
+            <a class="active" href="D&C.html">D and C
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+    
+    </aside>
+  
+     <!--Main content-->
+    <main class="main-content">
+
+    <header class="topbar">
+      <input type="search" id="productSearch" placeholder="Search products by name..." >
+      
+      <div class="user-profile">
+        john doe
+      </div>
+    </header>
+
+    <!--sales side-->
+    <section class="sale-workspace">
+
+      <!--products-->
+      <div class="product_selection">
+        <div class="section-heading">
+          <div>
+            <h2>View your Credits and Depts</h2>
+            <p>View to see who has your dept and where you you have a loan</p>
+<br>
+            
+          </div>
+        </div>
+
+        <div class="categories">
+                    <button>All</button>
+                    <button>Depts</button>
+                    <button>Credits</button>     
+                </div>
+                       <!--displaying the products in a grid-->
+                   
+               
+    </div>
+        
+
+               <!--the customer cart-->
+               <aside class="cart-section">
+                     <h3>Dept / Credit accounting</h3>
+                     <div class="customer-select">
+                    <select>
+                        <option id="deptor">Deptor</option>
+                         <option id="creditor">Creditor</option>
+                    </select>
+                </div>
+<hr>
+   <label for="purchase_description">Product</label>
+    <textarea type="text" placeholder=" Example:" id="purchase_description" rows="5" cols="40"
+     name="purchase_description" class="inputstyle"></textarea>
+      <br>
+    <label for="D/C">Deptor/creditor</label>
+    <input type="name" placeholder=" john doe" id="D/C" name="D/C" 
+     class="inputstyle">
+    <br>
+    <label for="sale_amount">Amount(KSH)</label>
+    <input type="number" placeholder=" 0" id="sale_amount" name="sale_amount"
+     min="1" class="inputstyle">
+     <br>
+     <label for="sale_price">Pay By Date</label>
+     <input type="date" placeholder="0" id="payDate" name="saleDate"
+     class="inputstyle">
+
+                     <div class="customer-select">   
+                        <br>  
+                          <div class="cart-summary">
+                        
+                        <h2>Total KES0</h2>
+
+                        <button class="charge-btn">
+                          You Paid KES 0
+                        </button>
+                       </div>
+                     </div>
+
+                     <!--the payment way i need this to be a pag that comes up whan you press
+                      the charge button but for noe this will do-->
+
+                    
+               </aside>
+
+                
+    </section>
+  </div>
+  </main>
+
+  <script>
+    let dc = document.getElementByClassName("customer-select");
+    let debtor = document.getElementById("deptor");
+    let creditor = document.getElementById("creditor");
+
+     debtor.addEventListener('select', () =>{
+      dc.style.color ="black";
+      console.log("button clicked");
+    })
+
+  </script>
+</body>
+</html>

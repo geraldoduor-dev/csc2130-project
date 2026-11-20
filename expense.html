@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title> Expenses</title>
+</head>
+<body>
+  <!--<section class="header" >
+    <h1>Biashara OS </h1>
+    <p></p>
+  </section> -->
+
+
+    <div class="app2">
+     <aside class="side">
+            <div class="sidetop">
+                 <header>
+                 <h1>Record Expenses</h1>
+                </header>
+                <br>
+                 <h3>BIASHARA OS</h3>
+                <hr>
+            <nav>
+             <button id="metric-card">
+            <a href="dashbord.html">Home</a></button>
+        <br>
+             <button id="metric-card">
+             <a href="inventory.html">Stock</a>
+            </button>
+            <br>
+              <button id="metric-card">
+            <a href="tracking.html"> Contacts</a>
+              </button>
+           <br> 
+            <button id="metric-card">
+            <a href="report.html">Reports</a>
+            </button>
+            
+            </nav>
+            </div>
+        </aside>
+    
+<div class="left">
+        <form id="purchase_form" action="purchase.php" method="post" name="sale_form">
+
+            <main>
+              
+                 <h4>Spending Category</h4>
+    <label for="spend_type"></label>
+    <select id="spend_type" name="spend_type">
+      <option value="goods">Stock</option>
+      <option value="rent">Rent</option>
+      <option value="trans">Transport</option>
+      <option value="power">Electricity</option> 
+      <option value="water">Warer</option>
+    </select>
+             
+    <br>
+
+      <label for="purchase_description">Product/Service</label>
+    <textarea type="text" placeholder=" Example:" id="purchase_description" rows="5" cols="40"
+     name="purchase_description" required></textarea>
+      <br>
+    <label for="quantity_sold">Quantity</label>
+    <input type="number" placeholder=" 1/one" id="quantity_sold" name="quantity_sold"  min="1" required>
+    <br>
+    <label for="sale_amount">Amount(KSH)</label>
+    <input type="number" placeholder=" 0" id="sale_amount" name="sale_amount" min="1" required>
+
+    <br>
+    <br>
+
+
+        </div>
+
+        <div class="right">
+
+        <label for="sale_date">Date</label>
+       <input type="date"  id="sale_date" name="sale_date" >
+       
+         <br>
+         <br>
+
+   <!-- <label for="payment_method">Payment Method</label><br>
+    <select id="payment_method" name="payment_method">
+      <option value="">select payment method</option>
+      <option value="cash">Cash</option>
+      <option value="bank">Bank</option>
+      <option value="other">Other</option> 
+    </select>  -->
+  
+    <section class="payment_method1">
+      <div class="sec1">
+    <input type="radio" id="M-Pesa" name="payment_method" value="M-Pesa">
+    <label for="M-Pesa">M-pesa</label>
+    <input type="radio" id="airtel" name="payment_method" value="airtel">
+    <label for="airtel">Airtel</label>
+    </div><br>
+    <div class="sec2"> 
+    <input type="radio" id="bank" name="payment_method" value="bank">
+    <label for="bank">Bank</label>
+    <input type="radio" id="cash" name="payment_method" value="cash">
+    <label for="cash">Cash</label>
+    </div>
+  </section>
+
+
+
+       <br>
+       <br>
+       <label for="submit"></label>
+       <input type="submit " value="submit">
+    </main>
+</form>
+    </div>
+        
+    </div>
+</body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style3.css">
+    <title>Record EXpenses/Biashara OS</title>
+</head>
+<body>
+    <body>
+  <!--main-->
+  <div class="app-layout">
+
+    <!--side bar-->
+    <aside class="sidebar">
+      <div cass="logo">
+        <h1>Biashara OS</h1>
+        <br>
+      </div>
+         <nav>
+            <a  href="sale.html">Sell</a>
+            <a  class="active"href="expenses.html">Expenses</a>
+            <a href="product.html">Products & Stock</a>
+            <a href="D&C.html">D and C
+            <a href="#">Reports</a>
+            <a href="#">Settings</a>
+        </nav>
+    
+    </aside>
+  
+     <!--Main content-->
+    <main class="main-content">
+
+    <header class="topbar">
+      <input type="search" id="productSearch" placeholder="Search products by name..." >
+      
+      <div class="user-profile">
+        john doe
+      </div>
+    </header>
+
+    <!--sales side-->
+    <section class="sale-workspace">
+
+      <!--products-->
+      <div class="product_selection">
+        <div class="section-heading">
+          <div>
+            <h2>Record your expenses</h2>
+            <p>Tap a product to add it to the cart</p>
+<br>
+            <button  class="new_expense" id="expenseNew">
+                <p>Select here to create a new expense</p>
+            </button>
+          </div>
+        </div>
+
+        <div class="categories">
+                    <button>All</button>
+                    <button>Shop</button>
+                    <button>Government</button>
+                    <button>Stock</button>
+                    <button>people</button>
+                </div>
+                       <!--displaying the products in a grid-->
+                <div class="product-grid">
+
+                  <div class="product-card">
+                    <img src="image/milk.png" alt="Store">
+                    <H4>Rent</H4>
+                    <p>KES 6500</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Water">
+                    <H4>Water</H4>
+                    <p>KES 700</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Electricity">
+                    <H4>Electricity</H4>
+                    <p>KES 2000</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Garbage">
+                    <H4>Garbage collection</H4>
+                    <p>KES 300</p>
+                    <button>+</button>
+                  </div>
+
+                  
+
+                    
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Labor">
+                    <H4>Labor cost</H4>
+                    <p>KES 4000</p>
+                    <button>+</button>
+                  </div>
+
+                                    <div class="product-card">
+                    <img src="image/milk.png" alt="Stock">
+                    <H4>Stock and products</H4>
+                    <a href="product.html">Go here to record</a>
+                    <button>+</button>
+                  </div>
+                  <br>
+                  <br>
+                 
+                  <form id="expensePopup" >
+                    <div class="inputContent">
+                      <label for="expense">New espense</label>
+                      <input type="text" id="expense" placeholder="eg WIFI" class="inputstyle">
+                      <br>
+                      <br>
+                      <label for="amount">Amonunt</label>
+                      <input type="number" id="amount" placeholder="0" class="inputstyle">
+                      <div class="addButton">
+                      <button id="add">ADD</button>
+                      </div>
+
+                    </div>
+                  </form>
+                </div>
+               </div>
+
+               <!--the customer cart-->
+               <aside class="cart-section">
+                     <h3>Your expenses</h3>
+<hr>
+
+            <!--place the customers products here using javascript-->
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+                     <div class="customer-select">
+                       <div class="cart-summary">
+                        <P>subtotal: KES0</P>
+                        <h2>Total KES0</h2>
+
+                        <button class="charge-btn">
+                          You Paid KES 0
+                        </button>
+                       </div>
+                     </div>
+
+                     <!--the payment way i need this to be a pag that comes up whan you press
+                      the charge button but for noe this will do-->
+
+                       <div class="payment-methods">
+                    <button>M-Pesa</button>
+                    <button>Card</button>
+                    <button>Cash</button>
+                    <button>
+                      <a href="D&C.html">Dept</a>
+                    </button>
+                </div>
+               </aside>
+
+    </section>
+  </div>
+  </main>
+
+  <script>
+    let popupForm = document.getElementById("expensePopup");
+    let expense = document.getElementById("expense").value;
+    let amount = Number(document.getElementById("amount"));
+    let button=document.getElementById("expenseNew");
+    let add=document.getElementById("add");
+
+    button.addEventListener('click', () =>{
+      popupForm.style.display="block";
+      console.log("button clicked");
+    })
+
+    add.addEventListener('click', () =>{
+      popupForm.style.display="none";
+      console.log("button clicked");
+    })
+ 
+    
+  </script>
+</body>
+</html>
